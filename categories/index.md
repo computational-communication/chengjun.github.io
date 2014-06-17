@@ -8,9 +8,13 @@ layout: page
 
 <ul class="listing">
 {% for post in site.categories.weibo %}
-    <li>{{ post.title }}</li>
+    <li class="listing-item">
+    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+    <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    </li>
 {% endfor %}
 
+<!--
 {% for cat in site.categories %}
   <li class="listing-seperator" id="{{ cat[0] }}">{{ cat[0] }}</li>
   {% for post in cat[1] %}
@@ -21,8 +25,9 @@ layout: page
   {% endfor %}
 {% endfor %}
 </ul>
+-->
 
-<!--
+
 <div id='tag_cloud'>
 {% for cat in site.categories %}
 <a href="#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] }} ({{ cat[1].size }})</a>
@@ -40,4 +45,3 @@ $(function () {
     $('#tag_cloud a').tagcloud();
 });
 </script>
--->
