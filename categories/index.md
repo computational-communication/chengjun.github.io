@@ -5,7 +5,7 @@ layout: page
 
 
 <ul class="listing">
-{% for cat in site.categories %}
+{% for cat == "weibo" %}
   <li class="listing-seperator" id="{{ weibo }}">{{ weibo }}</li>
   {% for post in cat[1] %}
     <li class="listing-item">
