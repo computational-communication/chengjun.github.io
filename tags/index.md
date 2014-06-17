@@ -3,14 +3,10 @@ title: tags
 layout: page
 ---
 
-<div id='tag_cloud'>
-{% for tag in site.tags %}
-<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
-{% endfor %}
-</div>
+
 
 <ul class="listing">
-{% for tag in site.tags.weibo %}
+{% for tag in site.tags.[weibo] %}
   <li class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</li>
 {% for post in tag[1] %}
   <li class="listing-item">
@@ -20,6 +16,12 @@ layout: page
 {% endfor %}
 {% endfor %}
 </ul>
+
+<div id='tag_cloud'>
+{% for tag in site.tags %}
+<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+{% endfor %}
+</div>
 
 <script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
 <script language="javascript">
