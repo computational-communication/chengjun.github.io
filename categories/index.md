@@ -6,7 +6,7 @@ layout: page
 
 <ul class="listing">
 {% for cat in site.categories %}
-  <li class="listing-seperator" id="{{ weibo }}">{{ weibo }}</li>
+  <!--<li class="listing-seperator" id="{{ weibo }}">{{ weibo }}</li> -->
 {% for post in cat[1] %}
   <li class="listing-item">
   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
