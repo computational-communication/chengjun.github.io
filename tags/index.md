@@ -10,7 +10,7 @@ layout: page
 </div>
 
 <ul class="listing">
-{% for tag in site.tags %}
+{% for tag in site.tags.weibo %}
   <li class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</li>
 {% for post in tag[1] %}
   <li class="listing-item">
