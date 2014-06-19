@@ -1,116 +1,1847 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://site.douban.com/146782/ -->
+<html lang="zh-CN" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./index_files/nav_dragdrop.js" async="true"></script><script type="text/javascript" src="./index_files/jquery-ui-effects-core.min.js" async="true"></script><script type="text/javascript" src="./index_files/mod_dragdrop.js" async="true"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+    
+    
+    <title>
+            计算传播学的小站
+</title>
+    
+<script type="text/javascript" src="./index_files/dshare.js" async="true"></script><script type="text/javascript" src="./index_files/video.js" async="true"></script><script type="text/javascript" src="./index_files/room-setting.js" async="true"></script><script type="text/javascript" src="./index_files/jquery-ui-sortable-dd.js" async="true"></script><script type="text/javascript" src="./index_files/photos.js" async="true"></script><script type="text/javascript" src="./index_files/setting_eventhandler.js" async="true"></script><script type="text/javascript" src="./index_files/slider.js" async="true"></script><script type="text/javascript" src="./index_files/common_eventhandler.js" async="true"></script><script type="text/javascript" src="./index_files/common.js" async="true"></script><script type="text/javascript" src="./index_files/ad.js" async="true"></script><script type="text/javascript" defer="" async="" src="./index_files/piwik.js"></script><script type="text/javascript" src="./index_files/jquery.min.js" async="true"></script><script>!function(f){var h=function(o,n,m){var k=new Date(),j,l;n=n||30;m=m||"/";k.setTime(k.getTime()+(n*24*60*60*1000));j="; expires="+k.toGMTString();for(l in o){f.cookie=l+"="+o[l]+j+"; path="+m}},d=function(m){var l=m+"=",o,n,j,k=f.cookie.split(";");for(n=0,j=k.length;n<j;n++){o=k[n].replace(/^\s+|\s+$/g,"");if(o.indexOf(l)==0){return o.substring(l.length,o.length).replace(/\"/g,"")}}return null},e=f.write,b={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},a=function(l,k){var j=new Image();j.onload=function(){};j.src="http://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(l)+"&environment="+encodeURIComponent(k)},i=function(k){try{e.call(f,k)}catch(j){e(k)}},c=/<script.*?src\=["']?([^"'\s>]+)/ig,g=/http:\/\/(.+?)\.([^\/]+).+/i;f.writeln=f.write=function(k){var j=c.exec(k),l;if(!j){i(k);return}l=g.exec(j[1]);if(!l){i(k);return}if(b[l[2]]){i(k);return}if(d("hj")==="tqs"){return}a(j[1],location.href);h({hj:"tqs"},1);setTimeout(function(){location.replace(location.href)},50)}}(document);</script>
 
-<!doctype html>
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>Cheng-Jun Wang</title>
-  <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
-  <meta http-equiv="pragma" content="no-cache" />
-  <meta name="robots" content="all" />
-  <meta name="MSSmartTagsPreventParsing" content="true" />
-  <meta http-equiv="imagetoolbar" content="false" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!--[if lt IE 9]>
-  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <link href="assets/stylesheets/application.css" rel="stylesheet" type="text/css">
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-</head>
+    <script type="text/javascript" src="./index_files/do.js" data-cfg-corelib="http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js"></script>
+    <script type="text/javascript">
+          Do.add('common', {path: 'http://img3.douban.com/f/shire/778ff923eb03b56586a3942d9b933001d5a20c7d/js/site/common.js', type: 'js'});
+        Do.add('common-eventhandler', {path: 'http://img3.douban.com/f/shire/4f4daa153aa80a250983ec98fedf63520e3f4d09/js/site/common_eventhandler.js', type: 'js', requires: ['common']});
+        Do.add('setting-eventhandler', {path: 'http://img3.douban.com/f/shire/690eb7b083e4e086f2cfd0ab1313041785b8c1db/js/site/setting_eventhandler.js', type: 'js', requires: ['common']});
+        Do.add('dialog-css', {path: 'http://img3.douban.com/f/shire/ae32cb8310a09ba836b958b79d2cd1e706db2fed/css/ui/dialog.css', type: 'css'});
+        Do.add('dialog', {path: 'http://img3.douban.com/f/shire/4b3bad5e25de78678d700dd5353570dce3e6bbcc/js/ui/dialog.js', type: 'js', requires: ['dialog-css']});
+        Do.add('swf', {path: 'http://img3.douban.com/f/shire/b38e7b7bf607a06d0bc79a87736f0cde80d78e3c/js/swfobject.js', type: 'js'});
+        Do.add('video', {path: 'http://img3.douban.com/f/shire/f176e27c6467329451677143a5d5e94345b4cd48/js/site/video.js', type: 'js'});
+        Do.add('artist', {path: 'http://img3.douban.com/f/shire/6f282ed98f8a22369b06ede8d597fe1e3384ed84/js/site/artist.js', type: 'js', requires: ['swf']});
+        Do.add('slider', {path: 'http://img3.douban.com/f/shire/d8e29263385ae7460f145f82f0dba90fd12b70a9/js/site/slider.js', type: 'js'});
+        Do.add('effects', {path: 'http://img3.douban.com/f/shire/6932278cdb6eb3d3147091dc343dd0deb80609e9/js/lib/jquery-ui-effects-core.min.js', type: 'js'});
+        Do.add('room-setting', {path: 'http://img3.douban.com/f/shire/e62b950ff7c932ca72546a5a06cab5a37348a580/js/site/room-setting.js', type: 'js'});
+        Do.global('common', 'common-eventhandler');
+        var STATIC_FILE_VER = '53025';
+    </script>
+    <link rel="shortcut icon" href="http://img3.douban.com/favicon.ico" type="image/x-icon">
+    <link href="./index_files/core.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/common.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/head_poster.css" rel="stylesheet" type="text/css">
+    
 
-<body>
-
-<div id="monogram">
-  <img src="" />
-</div>
-<br><br><br>
-<div id="social">
-  <a href="https://twitter.com/ChengJunWang">
-    <span class="icon-stack">
-      <i class="icon-circle icon-stack-base"></i>
-      <i class="icon-twitter icon-light"></i>
-    </span>
-  </a>
-  <!--<a href="http://chengjun.github.io/en/">
-    <span class="icon-stack">
-      <i class="icon-circle icon-stack-base"></i>
-      <i class="icon-rss icon-light"></i>
-    </span>
-  </a>-->
-  <a href="http://www.weibo.com/frankwang">
-    <span class="icon-stack">
-      <i class="icon-circle icon-stack-base"></i>
-      <i class="icon-weibo icon-light"></i>
-    </span>
-  </a>  
-  <a href="http://www.linkedin.com/in/chengjunwang">
-    <span class="icon-stack">
-      <i class="icon-circle icon-stack-base"></i>
-      <i class="icon-linkedin icon-light"></i>
-    </span>
-  </a>
-
-  <!--<a href="https://vimeo.com/bodong">
-    <span class="icon-stack">
-      <i class="icon-circle icon-stack-base"></i>
-      <i class="icon-film icon-light"></i>
-    </span>
-  </a>-->
-  <a href="mailto:wangchj04@gmail.com">
-    <span class="icon-stack">
-      <i class="icon-circle icon-stack-base"></i>
-      <i class="icon-envelope icon-light"></i>
-    </span>
-  </a>
-  <a href="https://github.com/chengjun">
-    <span class="icon-stack">
-      <i class="icon-circle icon-stack-base"></i>
-      <i class="icon-github icon-light"></i>
-    </span>
-  </a>
-  <a href="http://chengjun.github.io/en/">
-    <span class="icon-stack">
-      <i class="icon-circle icon-stack-base"></i>
-      <i class="icon-edit icon-light"></i>
-    </span>
-  </a>
-  <a href="http://chengjun.github.io/cn/">
-    <span class="icon-stack">
-      <i class="icon-circle icon-stack-base"></i>
-      <i class="icon-book icon-light"></i>
-    </span>
-  </a> 
-</div>
-
-<div id="about">
-  <h2>About Me</h2>
-  <p>My name is <strong>Cheng-Jun Wang </strong>(aka 王成军/Frank), a Ph.D candidate in the <a href="http://com.cityu.edu.hk/">Department of Media & Communication</a>, <a href="http://www.cityu.edu.hk/">City University of Hong Kong</a>. Currently, I am also a research member of <a href="http://weblab.com.cityu.edu.hk/">web mining lab</a>.</p>
-  <p>I received my master degree from Beijing University, and I got my bachelor degree from LanZhou University. You can find my <a href="http://chengjun.github.io/cv/">CV</a> here. What's <a href="http://chengjun.github.io/cv/news.html">new?</a></p>
-  <h2>Research Interest</h2>
-  <p>Primarily, I study how information diffuses online, e.g., my dissertation focuses on information diffusion on social media (e.g. Digg, YouTube, Weibo & Twitter). Additionally, I am interested in statistics, network science, and agent-based models. I document my thoughts and research on my blog <a href="http://chengjun.github.io/en/">(English</a>, <a href="http://chengjun.github.io/cn/">Chinese) </a>and the <a href="http://github.com/chengjun/">Github</a>.</p>
-
-
-  <h4> © Cheng-Jun Wang, 2013 Aug 30</h4>
-
-</div>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="assets/javascript/jquery.backstretch.min.js"></script>
-<script type="text/javascript" src="assets/javascript/application.js"></script>
-
-<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
 <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38928245-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+var roomHoverColor = '';
 </script>
 
-</body>
-</html>
+<!-- 阿比鹿房间透明样式 -->
+
+  
+  <link href="./index_files/core(1).css" rel="stylesheet" type="text/css">
+
+<style id="custom-theme">
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+    
+
+<meta content="Computational Communication(CC). 计算传播学，寻找人类传播行为的基因。" name="description">
+
+    <style type="text/css">
+      
+
+
+    </style>
+    <script>
+      
+    </script>
+    <link rel="stylesheet" href="http://img3.douban.com/misc/mixed_static/69f19d98d6ad236a.css">
+<style type="text/css" id="css-share-button">      .bn-sharing {padding-right:10px;background-image: url(http://t.douban.com/pics/a1.png) !important; background-repeat: no-repeat !important; background-position: 100% -19px !important;*display:inline-block;}      a.bn-sharing:hover {text-decoration:underline;}      .bn-sharing-on {background-position:100% 4px !important;position:relative !important;z-index:1 !important;}      #db-div-sharing {position:absolute;width:100px;*margin-top:-2px;}      #db-div-sharing .bd {border:1px solid #aaa;background:#fff;padding:10px 0 0 10px;}      #db-div-sharing .bd li {line-height:17px;margin-bottom:10px;}      #db-div-sharing .hd {position:absolute;height:24px;*line-height:21px;overflow:hidden;right:0;top:-24px;padding:0 5px;border:1px solid #aaa;border-bottom:none;background:#fff;}      .rec-sin,      .rec-qzone,      .rec-tx,      .rec-wx,      .rec-qqim {padding-left:20px;background:url(http://img3.douban.com/f/shire/3c8da10d6081bd1b2d13d3733b2ac201535c5d0f/pics/ic_shares2.png) no-repeat 0 0;}      .rec-qzone {background-position:0 -32px;}      .rec-qqim {background-position:0 -64px;}      .rec-tx {background-position:0 -96px;}      .rec-wx {background-position:0 -128px;}   </style><script src="./index_files/ga.js" async="true"></script></head>
+<body id="146782" data-site-url-for-json="http://site.douban.com/j/site/146782/" data-site-url="http://site.douban.com/146782/">
+    
+
+    <div class="wrapper">
+        <div id="header">
+            <div class="top-nav">
+                <a href="http://www.douban.com/" class="logo">豆瓣</a>
+                
+
+
+
+
+
+
+<div class="top-nav-info">
+		<span class="perf-metric"><!-- _performtips_ --></span>
+        
+        <a href="http://www.douban.com/doumail/">豆邮</a>
+      <a target="_blank" href="http://www.douban.com/accounts/">黠之大者的帐号</a>
+      <a href="http://www.douban.com/accounts/logout?ck=_GnL">退出</a>
+</div>
+
+
+            </div>
+            
+
+            <div class="sp-nav">
+                <div class="sp-logo">
+                    <a href="./index_files/index.htm" class="logo"><img src="./index_files/blank.gif" style="background:url(http://img3.douban.com/view/site/small/public/da6f326d066198d.jpg) no-repeat 0 0;" width="48" height="48" alt="计算传播学">计算传播学</a>
+                </div>
+                
+
+
+
+<div class="nav-items" unselectable="on">
+
+    <ul>
+        <li id="current-room" class="on ui-draggable ui-droppable" data-url-for-json="http://site.douban.com/j/site/146782//room/1442445/">
+            <a href="http://site.douban.com/146782/room/1442445/" hidefocus="true">
+                <span>首页</span><em title="房间设置">房间设置</em>
+            </a>
+        </li>
+        <li class="ui-draggable ui-droppable">
+            <a href="http://site.douban.com/146782/room/3476778/" hidefocus="true">
+                <span>动态</span>
+            </a>
+        </li>
+        <li class="ui-draggable ui-droppable">
+            <a href="http://site.douban.com/146782/room/1443087/" hidefocus="true">
+                <span>传播网络</span>
+            </a>
+        </li>
+        <li class="ui-draggable ui-droppable">
+            <a href="http://site.douban.com/146782/room/3186021/" hidefocus="true">
+                <span>文本挖掘</span>
+            </a>
+        </li>
+        <li class="ui-draggable ui-droppable">
+            <a href="http://site.douban.com/146782/room/3185615/" hidefocus="true">
+                <span>数据新闻</span>
+            </a>
+        </li>
+        <li class="ui-draggable ui-droppable">
+            <a href="http://site.douban.com/146782/room/1443492/" hidefocus="true">
+                <span>计算广告</span>
+            </a>
+        </li>
+        <li class="ui-draggable ui-droppable">
+            <a href="http://site.douban.com/146782/room/3197583/" hidefocus="true">
+                <span>数学模型</span>
+            </a>
+        </li>
+        <li class="ui-draggable ui-droppable">
+            <a href="http://site.douban.com/146782/room/3187952/" hidefocus="true">
+                <span>编程工具</span>
+            </a>
+        </li>
+        <li class="ui-draggable ui-droppable">
+            <a href="http://site.douban.com/146782/room/3199495/" hidefocus="true">
+                <span>开放数据</span>
+            </a>
+        </li>
+        <li id="room-admin" class="opt">
+            
+            <a id="admin-icon" href="http://site.douban.com/146782/admin/">管理</a>
+        </li>
+    </ul>
+</div>
+
+<script>
+
+    var isRoomEmpty = false,
+        isSiteFirstEnter = false
+    Do('slider', 'room-setting');
+    Do(function(){$(function(){$('.mod:has(.edit)').live('mouseenter', function(e){ $(e.currentTarget).addClass('mod-stat-active'); }).live('mouseleave', function(e){ $(e.currentTarget).removeClass('mod-stat-active');});});});
+</script>
+
+
+            </div>
+            
+
+
+
+
+<div class="sp-fn-box">
+    <a class="box-close" href="http://site.douban.com/146782/#">x</a>
+    <div class="room-box">
+        <input id="room-rename" type="text" value="首页" maxlength="15">
+        <label class="icon-save">保存</label>
+
+        
+
+        <span id="type-normal" class="widget-tips selected">
+            小站公共应用
+        <em>▶</em></span>
+        <a href="http://site.douban.com/146782/#" id="room_1442445" hidefocus="true" class="room-del">删除房间</a>
+    </div>
+
+    <div class="widgets-box" id="widget-normal">
+        <div class="widgets-slider">
+            <ul class="list-s slider" style="width: 1826px;">
+            
+
+
+<li>
+    <div class="intro">
+        <h2>论坛</h2>
+        <p>方便别人在这里坐而论道</p>
+    </div>
+    <a href="http://site.douban.com/146782/#" id="k-1001" class="lnk-add">添加</a>
+</li>
+<li>
+    <div class="intro">
+        <h2>公告栏</h2>
+        <p>贴通知的地方，甚至是通缉令</p>
+    </div>
+    <a href="http://site.douban.com/146782/#" id="k-1002" class="lnk-add">添加</a>
+</li>
+<li>
+    <div class="intro">
+        <h2>公共相册</h2>
+        <p>谁都能来贡献自己的作品</p>
+    </div>
+    <a href="http://site.douban.com/146782/#" id="k-1003" class="lnk-add">添加</a>
+</li>
+<li>
+    <div class="intro">
+        <h2>相册</h2>
+        <p>专供小站拥有者和管理者贴图</p>
+    </div>
+    <a href="http://site.douban.com/146782/#" id="k-1004" class="lnk-add">添加</a>
+</li>
+<li>
+    <div class="intro">
+        <h2>视频</h2>
+        <p>把别处的视频网址贴过来就能播放</p>
+    </div>
+    <a href="http://site.douban.com/146782/#" id="k-1005" class="lnk-add">添加</a>
+</li>
+<li>
+    <div class="intro">
+        <h2>日记</h2>
+        <p>难得的一个你能专心码字的好地方</p>
+    </div>
+    <a href="http://site.douban.com/146782/#" id="k-1006" class="lnk-add">添加</a>
+</li>
+<li>
+    <div class="intro">
+        <h2>同城活动</h2>
+        <p>一帮人约好一起去做爱做的事</p>
+    </div>
+    <a href="http://site.douban.com/146782/#" id="k-1007" class="lnk-add">添加</a>
+</li>
+<li>
+    <div class="intro">
+        <h2>投票</h2>
+        <p>从超级女声到总统选举都爱用它</p>
+    </div>
+    <a href="http://site.douban.com/146782/#" id="k-1008" class="lnk-add">添加</a>
+</li>
+<li>
+    <div class="intro">
+        <h2>留言板</h2>
+        <p>方便访客直接与小站沟通</p>
+    </div>
+    <a href="http://site.douban.com/146782/#" id="k-1009" class="lnk-add">添加</a>
+</li>
+<li>
+    <div class="intro">
+        <h2>广播</h2>
+        <p>广而告之小站的最新动态</p>
+    </div>
+    <a href="http://site.douban.com/146782/#" id="k-1037" class="lnk-add">添加</a>
+</li>
+<li>
+    <div class="intro">
+        <h2>小豆捐赠</h2>
+        <p>大家来用小豆支持你</p>
+    </div>
+    <a href="http://site.douban.com/146782/#" id="k-1038" class="lnk-add">添加</a>
+</li>
+
+            </ul>
+        </div>
+        <div class="slider-switcher">
+            <ul class="list-s switcher-dot"><li class="on">0</li><li>1</li><li>2</li></ul>
+            <span class="switcher-prev switcher-dis">&lt;</span>
+            <span class="switcher-next">&gt;</span>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div id="content">
+            <div class="main drop-area ui-sortable">
+                
+                
+    <noscript>
+        &lt;div class="message"&gt;
+            您的浏览器不支持javascript，不能使用此页面的全部功能。
+            请换用其他浏览器或者开启对javascript的支持。
+        &lt;/div&gt;
+    </noscript>
+
+                
+
+                
+                
+                
+
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+    
+
+
+
+<div class="mod sort" id="bulletin-7328191">
+
+
+    <div class="hd">
+    
+
+    
+    
+    
+
+        
+    <h2>
+          <span>公告栏</span>
+            
+            
+
+            
+        
+
+            
+            
+
+
+            
+
+        <span class="pl">
+            
+                ( <a href="http://site.douban.com/146782/widget/bulletin/7328191/update">修改</a> )
+        </span>
+
+
+    </h2>
+
+
+    <div class="edit">
+            <a href="http://site.douban.com/146782/#" rel="http://site.douban.com/146782/widget/bulletin/7328191/settings" class="a_lnk_mod_setting">设置</a>
+        </div>
+    </div>
+
+<div class="bd">
+
+
+
+<div class="bulletin-content" id="link-report7328191" data-id="7328191">《我们的愿景》：寻找可计算化的基因。计算传播学简介 (<a rel="nofollow" href="http://www.douban.com/link2/?url=http%3A%2F%2Fsite.douban.com%2F146782%2Fwidget%2Fnotes%2F7345278%2Fnote%2F320039066%2F" target="_blank">点这里阅读</a>)。基因是生物学飞跃的原因，货币是经济学发展的关键。人类传播行为所隐藏的计算化“基因”是什么？<br><br>计算传播学网站致力于寻找传播学可计算化的基因、学习和传播可计算化思维/方法（电子化数据收集能力、编程能力、数学建模能力、网络分析、文本挖掘）、了解和训练计算传播学的社会化应用方法（数据新闻、计算广告、可视化等）。<br><br>《计算传播学》小站<a rel="nofollow" href="http://www.douban.com/link2/?url=http%3A%2F%2Fsite.douban.com%2F146782%2Fwidget%2Fnotes%2F7345278%2Fnote%2F350159922%2F" target="_blank">求贤英雄帖</a>：愿意成为管理员的同学请告诉我！成为创造者你可以学到更多；变成分享者，你会变得更强大! 现任编委（管理员）包括（按字母顺序排列）：@波波头一头 @船长阿道克 @DarkE @江离 @囧囧小猫 @Mountain @poemcao  @善良的右行 @小和子 @着席 @黠之大者<br><br>了解小站动态：<a rel="nofollow" href="http://www.douban.com/link2/?url=http%3A%2F%2Fsite.douban.com%2F146782%2Froom%2F3476778%2F" target="_blank">http://site.douban.com/146782/room/3476778/</a><br><br>计算传播学邮件讨论组：<a rel="nofollow" href="http://www.douban.com/link2/?url=https%3A%2F%2Fgroups.google.com%2Fgroup%2Fcomputational-communication" target="_blank">https://groups.google.com/group/computational-communication</a><br><br>如果喜欢我们这个小站，就推荐一下吧！（<a rel="nofollow" href="http://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Fshare%2Frecommend%3Fsanity_key%3D_648f1%26apikey%3D%26object_kind%3D2011%26name%3D%25E8%25AE%25A1%25E7%25AE%2597%25E4%25BC%25A0%25E6%2592%25AD%25E5%25AD%25A6%25E5%25B0%258F%25E7%25AB%2599%25E7%259A%2584%25E6%2588%25BF%25E9%2597%25B4%2B%25EF%25BC%258D%2B%25E9%25A6%2596%25E9%25A1%25B5%26image%3D%26target_action%3D0%26redir%3Dhttp%253A%252F%252Fsite.douban.com%252F146782%252Froom%252F1442445%252F%26object_id%3D1442445%26heading%3D%25E6%258E%25A8%25E8%258D%2590%25E5%2588%25B0%25E8%25B1%2586%25E7%2593%25A3%26target_type%3Drec%26btn_text%3D%25E6%258E%25A8%25E8%258D%2590%26href%3Dhttp%253A%252F%252Fsite.douban.com%252F146782%252Froom%252F1442445%252F%26action_props%3D%257B%2522url%2522%253A%2522http%253A%255C%252F%255C%252Fsite.douban.com%255C%252F146782%255C%252Froom%255C%252F1442445%255C%252F%2522%252C%2522title%2522%253A%2522%25E8%25AE%25A1%25E7%25AE%2597%25E4%25BC%25A0%25E6%2592%25AD%25E5%25AD%25A6-%25E9%25A6%2596%25E9%25A1%25B5%2522%257D%26curl%3D%26type%3Dcom.douban.site%26properties%3D%257B%2522href%2522%253A%2522http%253A%255C%252F%255C%252Fsite.douban.com%255C%252F146782%255C%252F%2522%252C%2522name%2522%253A%2522%25E8%25AE%25A1%25E7%25AE%2597%25E4%25BC%25A0%25E6%2592%25AD%25E5%25AD%25A6%2522%252C%2522uid%2522%253A%2522146782%2522%257D%26desc%3D271%25E4%25BA%25BA%25E5%2585%25B3%25E6%25B3%25A8%2B%252F%2BComputational%2BCommunication%2528CC%2529.%2B%25E8%25AE%25A1%25E7%25AE%2597%25E4%25BC%25A0%25E6%2592%25AD%25E5%25AD%25A6%25EF%25BC%258C%25E8%2587%25B4%25E5%258A%259B%25E4%25BA%258E%25E5%25AF%25BB%25E6%2589%25BE%25E4%25BA%25BA%25E7%25B1%25BB%25E4%25BC%25A0%25E6%2592%25AD%25E8%25A1%258C%25E4%25B8%25BA%25E5%258F%25AF%25E8%25AE%25A1%25E7%25AE%2597%25E5%258C%2596%25E7%259A%2584%25E5%259F%25BA%25E5%259B%25A0%25E3%2580%2582">点击推荐</a>）<div class="report" style="visibility: hidden;"><a rel="nofollow" href="javascript:void(0)">举报</a></div></div>
+
+
+<script type="text/javascript" src="./index_files/report_dialog.js"></script>
+<link rel="stylesheet" type="text/css" href="./index_files/report_dialog.css">
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  Do('common', 'setting-eventhandler');
+</script>
+
+
+        
+        
+
+
+
+
+
+
+
+
+    
+
+
+
+<div class="mod sort" id="notes-7345278">
+
+
+    <div class="hd">
+    
+
+    
+    
+        
+    
+
+        
+    <h2>
+          <span>计算传播学</span>
+            
+            
+
+            
+        
+
+            
+            
+
+
+            
+
+        <span class="pl">
+            
+                ( <a href="http://site.douban.com/146782/widget/notes/7345278/">全部</a>&nbsp;·&nbsp;<a href="http://site.douban.com/146782/widget/notes/7345278/create">添加新日记</a> )
+        </span>
+
+
+    </h2>
+
+
+    <div class="edit">
+            <a href="http://site.douban.com/146782/#" rel="http://site.douban.com/146782/widget/notes/7345278/settings" class="a_lnk_mod_setting">设置</a>
+        </div>
+    </div>
+
+<div class="bd">
+
+
+
+
+    
+    <div class="item-entry">
+    <div class="title">
+        <a title="《计算传播学》小站的编辑原则草稿" href="http://site.douban.com/146782/widget/notes/7345278/note/354774600/">《计算传播学》小站的编辑原则草稿</a>
+    </div>
+    <div class="datetime">2014-05-31 19:31:47</div>
+    
+    
+
+<div class="summary" id="note_354774600_short">
+        <div class="ll"><a href="http://www.douban.com/note/354774600/"><img src="./index_files/p12287530.jpg" alt="Publishing Policy"></a></div>《计算传播学》小站目前已经开始广泛地吸纳有热情有活力的成员，并且公开招纳了一些有志于贡献于这个领域的同仁。到了开始考虑编辑原则和公开招纳小站主编的时候了。     1. 小站编辑每个月需贡献一篇小站文章。  文章最好为自己写的，也可以转载别人写的。 转载时需要征得对方同意并注明来源，对于其中涉及到的内容（如数......
+            <a href="http://site.douban.com/146782/widget/notes/7345278/note/354774600/#comments">(7回应)</a>
+</div>
+<div id="note_354774600_full" style="&quot;display:none&quot;" class="note-content">
+  <div id=""></div>
+</div>
+
+    
+
+
+
+<div id="note_354774600_footer" style="display:none" class="note-ft">
+    
+    <span class="count">&nbsp;27人阅读</span>
+
+
+
+    <div class="sns-bar">
+        
+
+
+    <div class="doulist-add-btn">
+  
+
+  
+
+  
+  <a href="javascript:void(0)" data-id="354774600" data-cate="1015" data-catename="日记" data-link="http://www.douban.com/people/frankwang/doulists/all?add=354774600&amp;cat=1015" class="lnk-doulist-add" onclick="moreurl(this, { &#39;from&#39;:&#39;doulist-btn-1015-354774600-1558440&#39;})">
+    <i></i>添加到豆列
+  </a>
+    </div>
+
+        <div class="sns-bar-rec">
+            
+            <script>
+            DoubanShareMenuList = [ 'sina', 'qzone', 'tx', 'renren', 'qqim' ];
+            </script>
+            
+    
+    <span class="rec" id="Note-354774600">
+    <a href="http://site.douban.com/146782/#" data-sina="" data-qq="" data-url="http://site.douban.com/146782/widget/notes/7345278/note/354774600/" data-desc="" data-title="【《计算传播学》小站的编辑原则草稿】《计算传播学》小站目前已经开始广泛地吸纳有热情有活力的成员，并且公开招纳了一些有志于贡献于这个领域的同仁。到了开始考虑编辑原则和公开招纳小站主编的时候了。 1. 小站编辑每个月需贡献一篇小站文章..." data-pic="http://img3.douban.com/view/note/large/public/p12287530.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </span>
+
+    
+
+        </div>
+        <div class="sns-bar-fav">
+            
+
+
+
+
+
+
+
+
+  
+  <a class="fav-add btn-fav" title="标为喜欢？" href="http://site.douban.com/146782/#" data-user_id="1558440" data-name="《计算传播学》小站的编辑原则草稿" data-type="com.douban.people" data-desc="《计算传播学》小站目前已经开始广泛地吸纳有热情有活力的成员，并且公开招纳了一些有志于贡献于这个领域的同仁。到了开始考虑编辑原则和公开招纳小站主编的时候了。 1. 小站编辑每个月需贡..." data-href="http://site.douban.com/146782/widget/notes/7345278/note/354774600/" data-image="" data-properties="{&quot;href&quot;:&quot;http:\/\/site.douban.com\/146782\/&quot;,&quot;name&quot;:&quot;计算传播学&quot;,&quot;uid&quot;:&quot;146782&quot;}" data-text="" data-apikey="None" data-object_kind="1015" data-object_id="354774600" data-target_type="fav" data-target_action="0" data-action_props="{&quot;note_url&quot;:&quot;http:\/\/site.douban.com\/146782\/widget\/notes\/7345278\/note\/354774600\/&quot;,&quot;note_title&quot;:&quot;《计算传播学》小站的编辑原则草稿&quot;,&quot;author_name&quot;:&quot;计算传播学&quot;}" data-tid="354774600" data-sanity_key="_a4745" data-update_num="update" data-tag_align="right" data-privacy="0" data-tkind="1015">喜欢</a>
+      <script type="text/template" id="fav-tag-template">
+        
+<form action="" method="POST"><div style="display:none;"><input type="hidden" name="ck" value="_GnL"/></div>
+  <div class="tag-editor-bd">
+      
+
+<div class="tags-editor">
+    <fieldset class="tags-writer">
+        <label for="author_tags_clone6593">添加标签，多个标签用空格分隔，帮助你更好地整理内容</label>
+        <input id="author_tags" name="author_tags" type="hidden" value="" />
+        <input tabindex="3" id="author_tags_clone6593" class="author_tags_clone" name="author_tags_clone" type="text" value="" />
+    </fieldset>
+</div>
+<div class="tags-control">
+    <span class="tags-tip error-msg"></span>
+    <a href="#" class="tags_more">展开全部<i class="triangle triangle-right"></i></a>
+</div>
+
+  </div>
+  <div class="tag-editor-ft">
+    <span class="bn-flat"><input type="submit" value="保存"></span>
+  </div>
+</form>
+
+      </script>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+    
+    <div class="item-entry">
+    <div class="title">
+        <a title="《计算传播学》小站持续寻找编委!" href="http://site.douban.com/146782/widget/notes/7345278/note/350159922/">《计算传播学》小站持续寻找编委!</a>
+    </div>
+    <div class="datetime">2014-05-10 13:09:25</div>
+    
+    
+
+<div class="summary" id="note_350159922_short">
+        <div class="ll"><a href="http://www.douban.com/note/350159922/"><img src="./index_files/p11994345.jpg" alt=""></a></div>传播是人类文明持续发展和进步的阶梯，而网络化社会的到来使得传播关系和行为的可计算化增强。伴随“计算社会科学”的浪潮和大数据的浪花，计算传播呼之欲出。  计算传播听起来很遥远，其实就发生在我们生活的很多细节：当我们使用手机或者互联网时，当我们浏览购物网站、微博、微信、豆瓣时，我们就会在虚拟系统中留下我们......
+            <a href="http://site.douban.com/146782/widget/notes/7345278/note/350159922/#comments">(14回应)</a>
+</div>
+<div id="note_350159922_full" style="&quot;display:none&quot;" class="note-content">
+  <div id=""></div>
+</div>
+
+    
+
+
+
+<div id="note_350159922_footer" style="display:none" class="note-ft">
+    
+    <span class="count">&nbsp;41人阅读</span>
+
+
+
+    <div class="sns-bar">
+        
+
+
+    <div class="doulist-add-btn">
+  
+
+  
+
+  
+  <a href="javascript:void(0)" data-id="350159922" data-cate="1015" data-catename="日记" data-link="http://www.douban.com/people/frankwang/doulists/all?add=350159922&amp;cat=1015" class="lnk-doulist-add" onclick="moreurl(this, { &#39;from&#39;:&#39;doulist-btn-1015-350159922-1558440&#39;})">
+    <i></i>添加到豆列
+  </a>
+    </div>
+
+        <div class="sns-bar-rec">
+            
+            <script>
+            DoubanShareMenuList = [ 'sina', 'qzone', 'tx', 'renren', 'qqim' ];
+            </script>
+            
+    
+    <span class="rec" id="Note-350159922">
+    <a href="http://site.douban.com/146782/#" data-sina="" data-qq="" data-url="http://site.douban.com/146782/widget/notes/7345278/note/350159922/" data-desc="" data-title="【《计算传播学》小站持续寻找编委!】传播是人类文明持续发展和进步的阶梯，而网络化社会的到来使得传播关系和行为的可计算化增强。伴随“计算社会科学”的浪潮和大数据的浪花，计算传播呼之欲出。 计算传播听起来很遥远，其实就发生在我们生活..." data-pic="http://img3.douban.com/view/note/large/public/p11994345.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </span>
+
+    
+
+        </div>
+        <div class="sns-bar-fav">
+            
+
+
+
+
+
+
+<span class="fav-num" data-tid="350159922" data-tkind="1015">
+      <a href="http://site.douban.com/146782/#">1人</a>
+  喜欢
+</span>
+
+
+  
+  <a class="fav-cancel btn-fav" title="取消喜欢？" href="http://site.douban.com/146782/#" data-user_id="1558440" data-name="《计算传播学》小站持续寻找编委!" data-type="com.douban.people" data-desc="传播是人类文明持续发展和进步的阶梯，而网络化社会的到来使得传播关系和行为的可计算化增强。伴随“计算社会科学”的浪潮和大数据的浪花，计算传播呼之欲出。 计算传播听起来很遥远，其实就..." data-href="http://site.douban.com/146782/widget/notes/7345278/note/350159922/" data-image="" data-properties="{&quot;href&quot;:&quot;http:\/\/site.douban.com\/146782\/&quot;,&quot;name&quot;:&quot;计算传播学&quot;,&quot;uid&quot;:&quot;146782&quot;}" data-text="" data-apikey="None" data-object_kind="1015" data-object_id="350159922" data-target_type="fav" data-target_action="0" data-action_props="{&quot;note_url&quot;:&quot;http:\/\/site.douban.com\/146782\/widget\/notes\/7345278\/note\/350159922\/&quot;,&quot;note_title&quot;:&quot;《计算传播学》小站持续寻找编委!&quot;,&quot;author_name&quot;:&quot;计算传播学&quot;}" data-tid="350159922" data-sanity_key="_aefa6" data-update_num="update" data-tag_align="right" data-privacy="0" data-tkind="1015">喜欢</a>
+      <script type="text/template" id="fav-tag-template">
+        
+<form action="" method="POST"><div style="display:none;"><input type="hidden" name="ck" value="_GnL"/></div>
+  <div class="tag-editor-bd">
+      
+
+<div class="tags-editor">
+    <fieldset class="tags-writer">
+        <label for="author_tags_clone8852">添加标签，多个标签用空格分隔，帮助你更好地整理内容</label>
+        <input id="author_tags" name="author_tags" type="hidden" value="" />
+        <input tabindex="3" id="author_tags_clone8852" class="author_tags_clone" name="author_tags_clone" type="text" value="" />
+    </fieldset>
+</div>
+<div class="tags-control">
+    <span class="tags-tip error-msg"></span>
+    <a href="#" class="tags_more">展开全部<i class="triangle triangle-right"></i></a>
+</div>
+
+  </div>
+  <div class="tag-editor-ft">
+    <span class="bn-flat"><input type="submit" value="保存"></span>
+  </div>
+</form>
+
+      </script>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+    
+    <div class="item-entry">
+    <div class="title">
+        <a title="科学的四重境界" href="http://site.douban.com/146782/widget/notes/7345278/note/328540079/">科学的四重境界</a>
+    </div>
+    <div class="datetime">2014-01-27 09:00:45</div>
+    
+    
+
+<div class="summary" id="note_328540079_short">
+        <div class="ll"><a href="http://www.douban.com/note/328540079/"><img src="./index_files/p10924891.jpg" alt=""></a></div>   引言 这篇日志来源于王雄对于物理学当中的引力理论的思考，除了引力理论之外，电磁理论，量子力学也有涉及，当然还有其它。我将本文放在这里，意在让读者思考自己对于所谓理论的认识是否清晰：你认为理想中的理论有几个层次？你所在的研究领域做到了第几个层次？是否可以层层深入？是否可以统一？按照科学四重境界所言，......
+</div>
+<div id="note_328540079_full" style="&quot;display:none&quot;" class="note-content">
+  <div id=""></div>
+</div>
+
+    
+
+
+
+<div id="note_328540079_footer" style="display:none" class="note-ft">
+    
+    <span class="count">&nbsp;59人阅读</span>
+
+
+
+    <div class="sns-bar">
+        
+
+
+    <div class="doulist-add-btn">
+  
+
+  
+
+  
+  <a href="javascript:void(0)" data-id="328540079" data-cate="1015" data-catename="日记" data-link="http://www.douban.com/people/frankwang/doulists/all?add=328540079&amp;cat=1015" class="lnk-doulist-add" onclick="moreurl(this, { &#39;from&#39;:&#39;doulist-btn-1015-328540079-1558440&#39;})">
+    <i></i>添加到豆列
+  </a>
+    </div>
+
+        <div class="sns-bar-rec">
+            
+            <script>
+            DoubanShareMenuList = [ 'sina', 'qzone', 'tx', 'renren', 'qqim' ];
+            </script>
+            
+    
+    <span class="rec" id="Note-328540079">
+    <a href="http://site.douban.com/146782/#" data-sina="" data-qq="" data-url="http://site.douban.com/146782/widget/notes/7345278/note/328540079/" data-desc="" data-title="【科学的四重境界】引言 这篇日志来源于王雄对于物理学当中的引力理论的思考，除了引力理论之外，电磁理论，量子力学也有涉及，当然还有其它。我将本文放在这里，意在让读者思考自己对于所谓理论的认识是否清晰：你认为理想中的理论..." data-pic="http://img5.douban.com/view/note/large/public/p10924799.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </span>
+
+    
+
+        </div>
+        <div class="sns-bar-fav">
+            
+
+
+
+
+
+
+<span class="fav-num" data-tid="328540079" data-tkind="1015">
+      <a href="http://site.douban.com/146782/#">6人</a>
+  喜欢
+</span>
+
+
+  
+  <a class="fav-add btn-fav" title="标为喜欢？" href="http://site.douban.com/146782/#" data-user_id="1558440" data-name="科学的四重境界" data-type="com.douban.people" data-desc="引言 这篇日志来源于王雄对于物理学当中的引力理论的思考，除了引力理论之外，电磁理论，量子力学也有涉及，当然还有其它。我将本文放在这里，意在让读者思考自己对于所谓理论的认识是否清晰..." data-href="http://site.douban.com/146782/widget/notes/7345278/note/328540079/" data-image="" data-properties="{&quot;href&quot;:&quot;http:\/\/site.douban.com\/146782\/&quot;,&quot;name&quot;:&quot;计算传播学&quot;,&quot;uid&quot;:&quot;146782&quot;}" data-text="" data-apikey="None" data-object_kind="1015" data-object_id="328540079" data-target_type="fav" data-target_action="0" data-action_props="{&quot;note_url&quot;:&quot;http:\/\/site.douban.com\/146782\/widget\/notes\/7345278\/note\/328540079\/&quot;,&quot;note_title&quot;:&quot;科学的四重境界&quot;,&quot;author_name&quot;:&quot;计算传播学&quot;}" data-tid="328540079" data-sanity_key="_da92d" data-update_num="update" data-tag_align="right" data-privacy="0" data-tkind="1015">喜欢</a>
+      <script type="text/template" id="fav-tag-template">
+        
+<form action="" method="POST"><div style="display:none;"><input type="hidden" name="ck" value="_GnL"/></div>
+  <div class="tag-editor-bd">
+      
+
+<div class="tags-editor">
+    <fieldset class="tags-writer">
+        <label for="author_tags_clone7145">添加标签，多个标签用空格分隔，帮助你更好地整理内容</label>
+        <input id="author_tags" name="author_tags" type="hidden" value="" />
+        <input tabindex="3" id="author_tags_clone7145" class="author_tags_clone" name="author_tags_clone" type="text" value="" />
+    </fieldset>
+</div>
+<div class="tags-control">
+    <span class="tags-tip error-msg"></span>
+    <a href="#" class="tags_more">展开全部<i class="triangle triangle-right"></i></a>
+</div>
+
+  </div>
+  <div class="tag-editor-ft">
+    <span class="bn-flat"><input type="submit" value="保存"></span>
+  </div>
+</form>
+
+      </script>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+    
+    <div class="item-entry">
+    <div class="title">
+        <a title="计算传播学：宣言与版图" href="http://site.douban.com/146782/widget/notes/7345278/note/320039066/">计算传播学：宣言与版图</a>
+    </div>
+    <div class="datetime">2013-12-07 14:45:38</div>
+    
+    
+
+<div class="summary" id="note_320039066_short">
+        <div class="ll"><a href="http://www.douban.com/note/320039066/"><img src="./index_files/p10531176.jpg" alt=""></a></div>(2012-01-29 09:41)   [置顶: 阐明我对计算传播学的理解，总括本站主要内容，将不断修改和更新]  引言：大道      李金铨(CC.Lee)老师讲治学，喟叹“大道不过三两句，说破能值几文钱？”这是一个开放性的问题，道出了社会科学家(social scientist)的无奈。诸多好玩的东西，归结到最后只有所谓“理论”的贡献，而没有应用的......
+            <a href="http://site.douban.com/146782/widget/notes/7345278/note/320039066/#comments">(2回应)</a>
+</div>
+<div id="note_320039066_full" style="&quot;display:none&quot;" class="note-content">
+  <div id=""></div>
+</div>
+
+    
+
+
+
+<div id="note_320039066_footer" style="display:none" class="note-ft">
+    
+    <span class="count">&nbsp;114人阅读</span>
+
+
+
+    <div class="sns-bar">
+        
+
+
+    <div class="doulist-add-btn">
+  
+
+  
+
+  
+  <a href="javascript:void(0)" data-id="320039066" data-cate="1015" data-catename="日记" data-link="http://www.douban.com/people/frankwang/doulists/all?add=320039066&amp;cat=1015" class="lnk-doulist-add" onclick="moreurl(this, { &#39;from&#39;:&#39;doulist-btn-1015-320039066-1558440&#39;})">
+    <i></i>添加到豆列
+  </a>
+    </div>
+
+        <div class="sns-bar-rec">
+            
+            <script>
+            DoubanShareMenuList = [ 'sina', 'qzone', 'tx', 'renren', 'qqim' ];
+            </script>
+            
+    
+    <span class="rec" id="Note-320039066">
+    <a href="http://site.douban.com/146782/#" data-sina="" data-qq="" data-url="http://site.douban.com/146782/widget/notes/7345278/note/320039066/" data-desc="" data-title="【计算传播学：宣言与版图】(2012-01-29 09:41) [置顶: 阐明我对计算传播学的理解，总括本站主要内容，将不断修改和更新] 引言：大道 李金铨(CC.Lee)老师讲治学，喟叹“大道不过三两句，说破能值几文钱？”这是一个开放性的问题，道出了社会..." data-pic="http://img3.douban.com/view/note/large/public/p10531025.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </span>
+
+    
+
+        </div>
+        <div class="sns-bar-fav">
+            
+
+
+
+
+
+
+<span class="fav-num" data-tid="320039066" data-tkind="1015">
+      <a href="http://site.douban.com/146782/#">6人</a>
+  喜欢
+</span>
+
+
+  
+  <a class="fav-add btn-fav" title="标为喜欢？" href="http://site.douban.com/146782/#" data-user_id="1558440" data-name="计算传播学：宣言与版图" data-type="com.douban.people" data-desc="(2012-01-29 09:41) [置顶: 阐明我对计算传播学的理解，总括本站主要内容，将不断修改和更新] 引言：大道 李金铨(CC.Lee)老师讲治学，喟叹“大道不过三两句，说破能值几文钱？”这是一个开放..." data-href="http://site.douban.com/146782/widget/notes/7345278/note/320039066/" data-image="" data-properties="{&quot;href&quot;:&quot;http:\/\/site.douban.com\/146782\/&quot;,&quot;name&quot;:&quot;计算传播学&quot;,&quot;uid&quot;:&quot;146782&quot;}" data-text="" data-apikey="None" data-object_kind="1015" data-object_id="320039066" data-target_type="fav" data-target_action="0" data-action_props="{&quot;note_url&quot;:&quot;http:\/\/site.douban.com\/146782\/widget\/notes\/7345278\/note\/320039066\/&quot;,&quot;note_title&quot;:&quot;计算传播学：宣言与版图&quot;,&quot;author_name&quot;:&quot;计算传播学&quot;}" data-tid="320039066" data-sanity_key="_9fa29" data-update_num="update" data-tag_align="right" data-privacy="0" data-tkind="1015">喜欢</a>
+      <script type="text/template" id="fav-tag-template">
+        
+<form action="" method="POST"><div style="display:none;"><input type="hidden" name="ck" value="_GnL"/></div>
+  <div class="tag-editor-bd">
+      
+
+<div class="tags-editor">
+    <fieldset class="tags-writer">
+        <label for="author_tags_clone7270">添加标签，多个标签用空格分隔，帮助你更好地整理内容</label>
+        <input id="author_tags" name="author_tags" type="hidden" value="" />
+        <input tabindex="3" id="author_tags_clone7270" class="author_tags_clone" name="author_tags_clone" type="text" value="" />
+    </fieldset>
+</div>
+<div class="tags-control">
+    <span class="tags-tip error-msg"></span>
+    <a href="#" class="tags_more">展开全部<i class="triangle triangle-right"></i></a>
+</div>
+
+  </div>
+  <div class="tag-editor-ft">
+    <span class="bn-flat"><input type="submit" value="保存"></span>
+  </div>
+</form>
+
+      </script>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+    
+    <div class="item-entry">
+    <div class="title">
+        <a title="计算传播学小站各版面的设置" href="http://site.douban.com/146782/widget/notes/7345278/note/320035781/">计算传播学小站各版面的设置</a>
+    </div>
+    <div class="datetime">2013-12-07 14:32:51</div>
+    
+    
+
+<div class="summary" id="note_320035781_short">
+        <div class="ll"><a href="http://www.douban.com/note/320035781/"><img src="./index_files/p10455360.jpg" alt=""></a></div>   这个小站子建立以来，我一直疏于管理，很对不起follow这个小站和关心计算传播学的朋友们。以后决定多往这里分享一些资源，多积累一些资料。  现在的计算传播学主要分为七个功能板块：两个研究领域（传播网络分析、媒介文本挖掘）、两个应用领域（数据新闻、计算广告）、两类研究方法（数学模型、编程工具），以及开放数......
+            <a href="http://site.douban.com/146782/widget/notes/7345278/note/320035781/#comments">(4回应)</a>
+</div>
+<div id="note_320035781_full" style="&quot;display:none&quot;" class="note-content">
+  <div id=""></div>
+</div>
+
+    
+
+
+
+<div id="note_320035781_footer" style="display:none" class="note-ft">
+    
+    <span class="count">&nbsp;34人阅读</span>
+
+
+
+    <div class="sns-bar">
+        
+
+
+    <div class="doulist-add-btn">
+  
+
+  
+
+  
+  <a href="javascript:void(0)" data-id="320035781" data-cate="1015" data-catename="日记" data-link="http://www.douban.com/people/frankwang/doulists/all?add=320035781&amp;cat=1015" class="lnk-doulist-add" onclick="moreurl(this, { &#39;from&#39;:&#39;doulist-btn-1015-320035781-1558440&#39;})">
+    <i></i>添加到豆列
+  </a>
+    </div>
+
+        <div class="sns-bar-rec">
+            
+            <script>
+            DoubanShareMenuList = [ 'sina', 'qzone', 'tx', 'renren', 'qqim' ];
+            </script>
+            
+    
+    <span class="rec" id="Note-320035781">
+    <a href="http://site.douban.com/146782/#" data-sina="" data-qq="" data-url="http://site.douban.com/146782/widget/notes/7345278/note/320035781/" data-desc="" data-title="【计算传播学小站各版面的设置】这个小站子建立以来，我一直疏于管理，很对不起follow这个小站和关心计算传播学的朋友们。以后决定多往这里分享一些资源，多积累一些资料。 现在的计算传播学主要分为七个功能板块：两个研究领域（传播网络分析、..." data-pic="http://img3.douban.com/view/note/large/public/p10455360.jpg" class="bn-sharing ">分享到</a> &nbsp;&nbsp;
+    </span>
+
+    
+
+        </div>
+        <div class="sns-bar-fav">
+            
+
+
+
+
+
+
+
+
+  
+  <a class="fav-add btn-fav" title="标为喜欢？" href="http://site.douban.com/146782/#" data-user_id="1558440" data-name="计算传播学小站各版面的设置" data-type="com.douban.people" data-desc="这个小站子建立以来，我一直疏于管理，很对不起follow这个小站和关心计算传播学的朋友们。以后决定多往这里分享一些资源，多积累一些资料。 现在的计算传播学主要分为七个功能板块：两个研究..." data-href="http://site.douban.com/146782/widget/notes/7345278/note/320035781/" data-image="" data-properties="{&quot;href&quot;:&quot;http:\/\/site.douban.com\/146782\/&quot;,&quot;name&quot;:&quot;计算传播学&quot;,&quot;uid&quot;:&quot;146782&quot;}" data-text="" data-apikey="None" data-object_kind="1015" data-object_id="320035781" data-target_type="fav" data-target_action="0" data-action_props="{&quot;note_url&quot;:&quot;http:\/\/site.douban.com\/146782\/widget\/notes\/7345278\/note\/320035781\/&quot;,&quot;note_title&quot;:&quot;计算传播学小站各版面的设置&quot;,&quot;author_name&quot;:&quot;计算传播学&quot;}" data-tid="320035781" data-sanity_key="_2e153" data-update_num="update" data-tag_align="right" data-privacy="0" data-tkind="1015">喜欢</a>
+      <script type="text/template" id="fav-tag-template">
+        
+<form action="" method="POST"><div style="display:none;"><input type="hidden" name="ck" value="_GnL"/></div>
+  <div class="tag-editor-bd">
+      
+
+<div class="tags-editor">
+    <fieldset class="tags-writer">
+        <label for="author_tags_clone9938">添加标签，多个标签用空格分隔，帮助你更好地整理内容</label>
+        <input id="author_tags" name="author_tags" type="hidden" value="" />
+        <input tabindex="3" id="author_tags_clone9938" class="author_tags_clone" name="author_tags_clone" type="text" value="" />
+    </fieldset>
+</div>
+<div class="tags-control">
+    <span class="tags-tip error-msg"></span>
+    <a href="#" class="tags_more">展开全部<i class="triangle triangle-right"></i></a>
+</div>
+
+  </div>
+  <div class="tag-editor-ft">
+    <span class="bn-flat"><input type="submit" value="保存"></span>
+  </div>
+</form>
+
+      </script>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  Do('common', 'setting-eventhandler');
+</script>
+
+
+        
+        
+
+
+
+
+
+
+
+
+    
+
+
+
+<div class="mod sort" id="public_album-15460279">
+
+
+    <div class="hd">
+    
+
+    
+    
+        
+    
+
+        
+    <h2>
+          <span>可视化</span>
+            
+            
+
+            
+        
+
+            
+            
+            
+
+        <span class="pl">
+            
+                ( <a href="http://site.douban.com/146782/widget/public_album/15460279/">全部</a> )
+        </span>
+
+
+    </h2>
+
+
+    <div class="edit">
+            <a href="http://site.douban.com/146782/#" rel="http://site.douban.com/146782/widget/public_album/15460279/settings" class="a_lnk_mod_setting">设置</a>
+        </div>
+    </div>
+
+<div class="bd">
+
+
+<div class="widget-photo-desc">
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+            <td width="350">
+                <div class="quote">
+                    <span class="inql">&nbsp;</span>
+                    为什么没有一个专门的可视化网页？因为每一部分都有可视化。大家可以自由上传有趣的可视化的图片，放在这里分享！
+                    <span class="inqr">&nbsp;</span>
+                </div>
+            </td>
+            <td valign="middle" align="center">
+                    <a href="http://site.douban.com/146782/widget/public_album/15460279/upload">+ 添加新照片</a>
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+<div class="widget-photo-list"> 
+<ul class="list-s"> 
+    
+    <li>
+		<a alt="http://www.openbibl..." href="http://site.douban.com/146782/widget/public_album/15460279/photo/2186244365/"><img src="./index_files/p2186244365.jpg"></a>
+		<div class="info desc">
+            <p>http://www.openbibl...</p>
+            <a href="http://www.douban.com/people/frankwang/" class="pic"><img src="./index_files/u1558440-39.jpg" title="黠之大者"></a>
+			<span class="arrow inner"></span>
+			<span class="arrow outer"></span>
+		</div>
+    </li>
+    
+    <li>
+		<a alt="" href="http://site.douban.com/146782/widget/public_album/15460279/photo/2183000122/"><img src="./index_files/p2183000122.jpg"></a>
+		<div class="info ">
+            <p></p>
+            <a href="http://www.douban.com/people/mountain/" class="pic"><img src="./index_files/u1000061-9.jpg" title="Mountain"></a>
+			<span class="arrow inner"></span>
+			<span class="arrow outer"></span>
+		</div>
+    </li>
+    
+    <li>
+		<a alt="http://www.sciencem..." href="http://site.douban.com/146782/widget/public_album/15460279/photo/2176416190/"><img src="./index_files/p2176416190.jpg"></a>
+		<div class="info desc">
+            <p>http://www.sciencem...</p>
+            <a href="http://www.douban.com/people/frankwang/" class="pic"><img src="./index_files/u1558440-39.jpg" title="黠之大者"></a>
+			<span class="arrow inner"></span>
+			<span class="arrow outer"></span>
+		</div>
+    </li>
+    
+    <li>
+		<a alt="L. A. Adamic and N...." href="http://site.douban.com/146782/widget/public_album/15460279/photo/2172762222/"><img src="./index_files/p2172762222.jpg"></a>
+		<div class="info desc">
+            <p>L. A. Adamic and N....</p>
+            <a href="http://www.douban.com/people/frankwang/" class="pic"><img src="./index_files/u1558440-39.jpg" title="黠之大者"></a>
+			<span class="arrow inner"></span>
+			<span class="arrow outer"></span>
+		</div>
+    </li>
+    
+    <li>
+		<a alt="http://qianxi.baidu..." href="http://site.douban.com/146782/widget/public_album/15460279/photo/2169758756/"><img src="./index_files/p2169758756.jpg"></a>
+		<div class="info desc">
+            <p>http://qianxi.baidu...</p>
+            <a href="http://www.douban.com/people/frankwang/" class="pic"><img src="./index_files/u1558440-39.jpg" title="黠之大者"></a>
+			<span class="arrow inner"></span>
+			<span class="arrow outer"></span>
+		</div>
+    </li>
+</ul>
+
+<p class="rec-num">15张照片</p>
+
+</div>
+
+
+<script type="text/javascript">
+Do.add('photos', {path: 'http://img3.douban.com/f/shire/c8ee4f1092491b7867c80033945e96b0a6f33690/js/site/photos.js', type: 'js'});
+Do('photos');
+</script>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  Do('common', 'setting-eventhandler');
+</script>
+
+
+        
+        
+
+
+
+
+
+
+
+
+    
+
+
+
+<div class="mod sort" id="videos-15460305">
+
+
+    <div class="hd">
+    
+
+    
+    
+        
+    
+
+        
+    <h2>
+          <span>计算传播学的视频</span>
+            
+            
+
+            
+
+    (5)
+
+        
+
+            
+            
+
+
+            
+
+        <span class="pl">
+            
+                ( <a href="http://site.douban.com/146782/widget/videos/15460305/">全部</a>&nbsp;·&nbsp;<a href="http://site.douban.com/j/widget/videos/15460305/create" class="a_add_video">添加</a> )
+        </span>
+
+
+    </h2>
+
+
+    <div class="edit">
+            <a href="http://site.douban.com/146782/#" rel="http://site.douban.com/146782/widget/videos/15460305/settings" class="a_lnk_mod_setting">设置</a>
+        </div>
+    </div>
+
+<div class="bd">
+
+
+
+<div class="video-list">
+    <ul class="list-s">
+
+
+
+
+<li>
+  <div class="item-video">
+    <div class="pic">
+    <a href="http://site.douban.com/146782/widget/videos/15460305/video/479635/">
+      <img src="./index_files/0100641F46538FB644669216ECF7B5932C966C-FE24-6EC1-7565-59E547DCD2C4" alt="" name="http://v.youku.com/v_show/id_XNzIxODU2NTQw.html" width="130" height="97">
+      <span class="video-overlay"></span>
+    </a>
+    </div>
+    <div class="info">
+    <a href="http://site.douban.com/146782/widget/videos/15460305/video/479635/"> 星空日记 </a><br>
+    2014-06-05上传<br>
+    <a href="http://site.douban.com/146782/widget/videos/15460305/video/479635/#comments">1回应</a><br>
+    </div>
+</div>
+  </li>
+<li>
+  <div class="item-video">
+    <div class="pic">
+    <a href="http://site.douban.com/146782/widget/videos/15460305/video/432748/">
+      <img src="./index_files/0100641F465302CE8A571903BB0A5323BF08AB-61CB-C9C7-B5E9-CB9C4ACD1643" alt="" name="http://v.youku.com/v_show/id_XNjc0NDcxNDAw.html" width="130" height="97">
+      <span class="video-overlay"></span>
+    </a>
+    </div>
+    <div class="info">
+    <a href="http://site.douban.com/146782/widget/videos/15460305/video/432748/"> How to Write a Great Research Paper </a><br>
+    2014-02-19上传<br>
+    <a href="http://site.douban.com/146782/widget/videos/15460305/video/432748/#comments">0回应</a><br>
+    </div>
+</div>
+  </li>
+<li>
+  <div class="item-video">
+    <div class="pic">
+    <a href="http://site.douban.com/146782/widget/videos/15460305/video/424914/">
+      <img src="./index_files/0100641F464D573CFA2619007137BF7F1976BB-3248-575F-CFC4-D460D7A249AB" alt="" name="http://v.youku.com/v_show/id_XNzc4Mjk1NjA=.html" width="130" height="97">
+      <span class="video-overlay"></span>
+    </a>
+    </div>
+    <div class="info">
+    <a href="http://site.douban.com/146782/widget/videos/15460305/video/424914/"> Character of Physical Law </a><br>
+    2014-01-27上传<br>
+    <a href="http://site.douban.com/146782/widget/videos/15460305/video/424914/#comments">0回应</a><br>
+    </div>
+</div>
+  </li>
+
+</ul>
+</div>
+
+<script>
+Do('common', 'dialog', 'video');
+</script>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  Do('common', 'setting-eventhandler');
+</script>
+
+
+
+
+
+
+
+<div id="sp-rec-room" class="mod">
+<div class="bd">
+    
+    
+
+
+
+
+
+
+
+    <script>
+        var rec_url = 'http://www.douban.com/share/recommend?'
+    </script>
+        <script>
+          Do.add('dshare', {path: 'http://img3.douban.com/f/shire/27757b9a3d889f1335d9c0259d130a7aacfcd2df/js/dshare.js', type: 'js', requires:['dialog']});
+          Do('dshare');
+        </script>
+
+    <div class="rec-sec">
+
+    <span class="rec">
+
+<a data-user_id="1558440" href="http://www.douban.com/share/recommend?sanity_key=_648f1&apikey=&object_kind=2011&name=%E8%AE%A1%E7%AE%97%E4%BC%A0%E6%92%AD%E5%AD%A6%E5%B0%8F%E7%AB%99%E7%9A%84%E6%88%BF%E9%97%B4+%EF%BC%8D+%E9%A6%96%E9%A1%B5&image=&target_action=0&redir=http%3A%2F%2Fsite.douban.com%2F146782%2Froom%2F1442445%2F&object_id=1442445&heading=%E6%8E%A8%E8%8D%90%E5%88%B0%E8%B1%86%E7%93%A3&target_type=rec&btn_text=%E6%8E%A8%E8%8D%90&href=http%3A%2F%2Fsite.douban.com%2F146782%2Froom%2F1442445%2F&action_props=%7B%22url%22%3A%22http%3A%5C%2F%5C%2Fsite.douban.com%5C%2F146782%5C%2Froom%5C%2F1442445%5C%2F%22%2C%22title%22%3A%22%E8%AE%A1%E7%AE%97%E4%BC%A0%E6%92%AD%E5%AD%A6-%E9%A6%96%E9%A1%B5%22%7D&curl=&type=com.douban.site&properties=%7B%22href%22%3A%22http%3A%5C%2F%5C%2Fsite.douban.com%5C%2F146782%5C%2F%22%2C%22name%22%3A%22%E8%AE%A1%E7%AE%97%E4%BC%A0%E6%92%AD%E5%AD%A6%22%2C%22uid%22%3A%22146782%22%7D&desc=687%E4%BA%BA%E5%85%B3%E6%B3%A8+%2F+Computational+Communication%28CC%29.+%E8%AE%A1%E7%AE%97%E4%BC%A0%E6%92%AD%E5%AD%A6%EF%BC%8C%E5%AF%BB%E6%89%BE%E4%BA%BA%E7%B1%BB%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA%E7%9A%84%E5%9F%BA%E5%9B%A0%E3%80%82" share-id="1442445" data-mode="plain" data-name="计算传播学小站的房间 － 首页" data-type="com.douban.site" data-desc="687人关注 / Computational Communication(CC). 计算传播学，寻找人类传播行为的基因。" data-href="http://site.douban.com/146782/room/1442445/" data-image="" data-properties="{&quot;href&quot;:&quot;http:\/\/site.douban.com\/146782\/&quot;,&quot;name&quot;:&quot;计算传播学&quot;,&quot;uid&quot;:&quot;146782&quot;}" data-redir="http://site.douban.com/146782/room/1442445/vote?ck=_GnL" data-text="" data-apikey="" data-curl="" data-count="10" data-object_kind="2011" data-object_id="1442445" data-target_type="rec" data-target_action="0" data-action_props="{&quot;url&quot;:&quot;http:\/\/site.douban.com\/146782\/room\/1442445\/&quot;,&quot;title&quot;:&quot;计算传播学-首页&quot;}" data-btn_text="推荐" data-heading="推荐到豆瓣" data-sanity_key="_648f1" class="lnk-sharing lnk-douban-sharing">推荐</a>
+</span>
+</div>
+
+</div>
+</div>
+
+
+
+
+            </div>
+            <div class="aside drop-area ui-sortable">
+                
+
+
+
+
+
+
+
+<div class="mod" id="sp-user">
+    <div class="bd">
+        <div class="user-pic">
+            <img alt="计算传播学" src="./index_files/f47d5dbe18c36b9.jpg">
+        </div>
+        <div class="site-follow">
+            <span>我关注这个小站。</span><span><a id="unlike" href="http://site.douban.com/146782/#" class="lnk-unfollow" title="确实不再关注 计算传播学 吗?">&gt;取消</a></span>
+            
+            <input id="followed" type="hidden" value="1">
+        </div>
+        <div class="desc">
+            Computational Communication(CC). 计算传播学，寻找人类传播行为的基因。
+        </div>
+        
+    <div class="share" id="share-site">
+        <p>
+        
+        <strong class="title">分享小站</strong>
+        <span title="豆瓣广播" class="shuo"><a href="">&nbsp;</a></span>
+        <span title="新浪微博" class="sina"><a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=3015934887',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&source=',e(r),'&sourceUrl=',e(l),'&content=',c||'gb2312','&pic=',encodeURI('http://img3.douban.com/view/site/large/public/f47d5dbe18c36b9.jpg')].join('');function%20a(){var%20_url='http://www.douban.com/link2?type=redir&vendor=bshare_sina&url='+e([f,p].join(''));if(!window.open(_url,'mb',['toolbar=0,status=0,resizable=1,width=640,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=_url;};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','推荐计算传播学的豆瓣小站','http://site.douban.com/146782/','utf-8'));">&nbsp;</a></span>
+        <span title="腾讯微博" class="tqq"><a href="javascript:void((function(){var f='推荐计算传播学的豆瓣小站';var c='http://site.douban.com/146782/';var e=encodeURI('1459b2ac3d2345d2a17396eec5ad3bd7');var b=encodeURI('http://img3.douban.com/view/site/large/public/f47d5dbe18c36b9.jpg');var a='';var d='http://v.t.qq.com/share/share.php?url='+c+'&appkey='+e+'&site='+a+'&pic='+b+'&title='+f;window.open('http://www.douban.com/link2?type=redir&vendor=bshare_tx&url=' + encodeURIComponent(d),'','width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no')})());">&nbsp;</a></span>
+        
+        <span class="shuo-hidden" style="display:none"><a href="http://shuo.douban.com/!service/share" share-id="146782" data-text="推荐小站" data-properties="" data-mode="plain" data-name="计算传播学" data-type="" data-href="http://site.douban.com/146782/" data-image="http://img3.douban.com/view/site/small/public/da6f326d066198d.jpg" data-redir="http://site.douban.com/static/dshare_proxy.html" class="lnk-sharing lnk-douban-sharing" data-target_type="rec" data-target_action="0" data-object_kind="2012" data-object_id="146782" data-action_props="{&quot;site_title&quot;:&quot;计算传播学&quot;,&quot;site_url&quot;:&quot;http:\/\/site.douban.com\/146782\/&quot;}" data-desc="687人关注" data-sanity_key="_4111b">推荐</a></span>
+        </p>
+    </div>
+
+        <div class="site-info">
+            
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="db-followers" class="mod">
+  <div class="hd">
+    
+    <h2>
+          <span>关注该小站的成员</span>
+
+
+        <span class="pl">
+                ( <a href="http://site.douban.com/146782/followers/">687</a> )
+        </span>
+
+
+    </h2>
+
+  </div>
+  <div class="bd">
+    
+
+<ul class="list-s">
+    
+    <li>
+    <div class="pic">
+        <a href="http://www.douban.com/people/emmthesqui/" class="nbg"><img src="./index_files/u1856719-11.jpg" class="imgg" alt="波牛" title="波牛"></a> 
+    </div>
+    
+    </li>
+    
+    <li>
+    <div class="pic">
+        <a href="http://www.douban.com/people/chujini/" class="nbg"><img src="./index_files/u2769919-22.jpg" class="imgg" alt="chujiney" title="chujiney"></a> 
+    </div>
+    
+    </li>
+    
+    <li>
+    <div class="pic">
+        <a href="http://www.douban.com/people/yangtongxue/" class="nbg"><img src="./index_files/u1031490-15.jpg" class="imgg" alt="羊" title="羊"></a> 
+    </div>
+    
+    </li>
+    
+    <li>
+    <div class="pic">
+        <a href="http://www.douban.com/people/50575717/" class="nbg"><img src="./index_files/u50575717-6.jpg" class="imgg" alt="18850157509" title="18850157509"></a> 
+    </div>
+    
+    </li>
+    
+    <li>
+    <div class="pic">
+        <a href="http://www.douban.com/people/89989751/" class="nbg"><img src="./index_files/u89989751-2.jpg" class="imgg" alt="宝葫芦" title="宝葫芦"></a> 
+    </div>
+    
+    </li>
+    
+    <li>
+    <div class="pic">
+        <a href="http://www.douban.com/people/52513753/" class="nbg"><img src="./index_files/u52513753-19.jpg" class="imgg" alt="sLeepor" title="sLeepor"></a> 
+    </div>
+    
+    </li>
+    
+    <li>
+    <div class="pic">
+        <a href="http://www.douban.com/people/pigletvincent/" class="nbg"><img src="./index_files/u2653704-84.jpg" class="imgg" alt="V先生" title="V先生"></a> 
+    </div>
+    
+    </li>
+    
+    <li>
+    <div class="pic">
+        <a href="http://www.douban.com/people/brucenan/" class="nbg"><img src="./index_files/u2451625-8.jpg" class="imgg" alt="发福的南瓜" title="发福的南瓜"></a> 
+    </div>
+    
+    </li>
+</ul>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="db-similar-sites" class="mod">
+    <div class="hd">
+        
+    <h2>
+          <span>关注该小站的成员也关注</span>
+
+
+        <span class="pl">
+        </span>
+
+
+    </h2>
+
+    </div>
+    <div class="bd">
+        <div class="item">
+            <div class="pic">
+                <a href="http://site.douban.com/197397/">
+                    <img src="./index_files/b5db8df89ee556d.jpg" width="74" height="74" alt="This American Life">
+                </a>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <a href="http://site.douban.com/197397/?ref=similar_sites" title="This American Life">This American Life</a>
+                </div>
+                <span class="likes">7人关注</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <a href="http://site.douban.com/207384/">
+                    <img src="./index_files/6531ce11924ecdf.jpg" width="74" height="74" alt="Visualization">
+                </a>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <a href="http://site.douban.com/207384/?ref=similar_sites" title="Visualization">Visualization</a>
+                </div>
+                <span class="likes">132人关注</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <a href="http://site.douban.com/177217/">
+                    <img src="./index_files/94bff2a67b54411.jpg" width="74" height="74" alt="0531小站">
+                </a>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <a href="http://site.douban.com/177217/?ref=similar_sites" title="0531小站">0531小站</a>
+                </div>
+                <span class="likes">3人关注</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <a href="http://site.douban.com/171559/">
+                    <img src="./index_files/68240c49b5f81da.jpg" width="74" height="74" alt="2012cumulusDIH">
+                </a>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <a href="http://site.douban.com/171559/?ref=similar_sites" title="2012cumulusDIH">2012cumulusDIH</a>
+                </div>
+                <span class="likes">5人关注</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="db-ad">
+        <div id="dale_site_normal_right_bottom"><iframe id="dale_site_normal_right_bottom_frame" frameborder="0" scrolling="no" width="200" height="200" style="overflow: hidden; margin: 0px 0px 20px;"></iframe></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="extra">
+                
+
+
+
+<div class="extra">
+        <a class="gact" href="http://www.douban.com/misc/site_report?site_id=146782&room_id=1442445">&gt; 举报不良信息</a>
+</div>
+
+
+            </div>
+        </div>
+        
+<div id="footer">
+    
+
+<div class="db-inc">
+<span class="about">
+    <a href="http://www.douban.com/about">关于豆瓣</a>
+    · <a href="http://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="http://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="http://www.douban.com/about?policy=disclaimer">免责声明</a>
+    · <a href="http://www.douban.com/help/">帮助中心</a>
+    · <a href="http://developers.douban.com/" target="_blank">开发者</a>
+    · <a href="http://www.douban.com/mobile/">移动应用</a>
+    · <a href="http://www.douban.com/partner/">豆瓣广告</a>
+
+</span>
+<span class="copyright">
+    © 2005－2014 douban.com, all rights reserved
+</span>
+
+
+</div>
+
+</div>
+
+    </div>
+    <div class="bg">&nbsp;<div class="mask">&nbsp;</div></div>
+
+    <script type="text/javascript">
+    /* for room nav */
+    Do(function () {
+        $('.nav-items .opt > a').click(function (e) {
+            // 不显示管理菜单
+            if (e.target.id === 'admin-icon') {
+              return;
+            }
+            var self = this;
+            $(this).next().show().blur_hide();
+            if (!$('ul', this).is(':hidden')) {
+                if (roomHoverColor) {
+                    $(this).css('background-color', roomHoverColor);
+                }
+                $(this).addClass('admin-icon-active');
+            }
+            $(document.body).click(function (e) {
+                if (e.target.id !== 'admin-icon') {
+                    $(self).removeAttr('class');
+                }
+                if (e.target.id !== 'more-icon' && roomHoverColor) {
+                    $(self).removeAttr('style');
+                }
+            });
+            e.preventDefault();
+        });
+    });
+</script><script type="text/javascript">
+	Do = (typeof Do === 'undefined')? $ : Do;
+	Do(function(){
+      var reportDiv = "#link-report".concat("7328191");
+      $("body").delegate(reportDiv, 'mouseenter mouseleave', function(e){
+
+        switch (e.type) {
+          case "mouseenter":
+            $(this).find(".report").css('visibility', 'visible');
+            break;
+          case "mouseleave":
+            $(this).find(".report").css('visibility', 'hidden');
+            break;
+        }
+      });
+      $(reportDiv).delegate(".report a", 'click', function(e){
+          e.preventDefault();
+          var auditUrl = "http://www.douban.com/misc/audit_report?url=",
+              opt = "bulletin";
+          var obj = $(e.target).closest(reportDiv);
+          var id = obj.length != 0 ? obj.data("id") : undefined;
+          var params = (opt&&id) ? '?'.concat(opt, '=', id) : '';
+          var url = "http://site.douban.com/146782/".concat(params);
+          generate_report_dialog({report_url: url});
+      });
+
+      $(reportDiv).append('<div class="report"><a rel="nofollow" href="javascript:void(0)">举报</a></div>');
+  });
+</script><script type="text/javascript" src="./index_files/4428cda478eef3f0.js"></script>
+    
+<script type="text/javascript">
+    var mine_page_url="/j/site/146782/layout";
+    var aside = false;
+    Do('http://img3.douban.com/f/shire/4306c5e7019c6b68a54b1b5f20600578a0a6a5b3/js/lib/jquery-ui-sortable-dd.js','http://img3.douban.com/f/shire/44e167baa627e3744370d01983f63fe2e15959af/js/site/mod_dragdrop.js', 'http://img3.douban.com/f/shire/ae3319d72d9eafb5767898df75e80d00d683741c/js/site/nav_dragdrop.js');
+</script>
+
+    
+    <!-- biz script begin -->
+    
+
+
+
+
+
+<script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://fundin.douban.com/";
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=u+'piwik.js'; 
+    s.parentNode.insertBefore(g,s);
+})();
+</script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7019765-1']);
+_gaq.push(['_addOrganic', 'baidu', 'word']);
+_gaq.push(['_addOrganic', 'soso', 'w']);
+_gaq.push(['_addOrganic', '3721', 'name']);
+_gaq.push(['_addOrganic', 'youdao', 'q']);
+_gaq.push(['_addOrganic', 'so.360.cn', 'q']);
+_gaq.push(['_addOrganic', 'vnet', 'kw']);
+_gaq.push(['_addOrganic', 'sogou', 'query']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣']);
+_gaq.push(['_addIgnoredOrganic', 'douban']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣网']);
+_gaq.push(['_addIgnoredOrganic', 'www.douban.com']);
+_gaq.push(['_setDomainName', '.douban.com']);
+
+_gaq.push(['_setCustomVar', 1, 'site_type', 'normal', 3]); 
+
+
+    _gaq.push(['_setCustomVar', 1, 'responsive_view_mode', 'desktop', 3]); 
+
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+    _gaq.push(['_setVar', '155']);
+
+window._ga_init = function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+};
+if (window.addEventListener) {
+    window.addEventListener('load', _ga_init, false);
+} else {
+    window.attachEvent('onload', _ga_init);
+}
+</script>
+
+
+
+
+
+    
+
+<script type="text/javascript">
+  Do(function(){
+    $(function(){
+      $.get('/stat.html?ref=http%3A%2F%2Fsite.douban.com%2F146782%2F&site_type=n&bid=2zaTr3oA5PY&uid=1558440');
+    });
+  });
+</script>
+
+    
+    <!-- biz script end -->
+
+    
+
+
+<!-- douban ad begin -->
+
+
+
+
+
+
+    
+<script type="text/javascript" data-mobile="true">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = 'http://erebor.douban.com/',
+            userId = '1558440',
+            browserId = '2zaTr3oA5PY',
+            ipAddress = '121.14.98.48',
+            criteria = '5:146782|3:/146782/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_site_normal_right_bottom'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, ip: ipAddress, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'http://img3.douban.com/f/shire/55c9fe0e9ecb5725037e9839fc515504008dae74/js/ad.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+<!-- douban ad end -->
+
+
+    <script>_SPLITTEST='movie.no-test,sns.album_tag'</script>
+    <!-- dis16-->
+  
+
+<link type="text/css" rel="stylesheet" href="./index_files/dialog.css"><script type="text/javascript" src="./index_files/dialog.js" async="true"></script><link type="text/css" rel="stylesheet" href="./index_files/tag.css"><link type="text/css" rel="stylesheet" href="./index_files/tag_editor.css"><script type="text/javascript" src="./index_files/tag_editor.js" async="true"></script><script type="text/javascript" src="./index_files/tag_editor_dialog.js" async="true"></script><script>var _check_hijack = function () {
+    var _sig = "2zaTr3oA", _login = true, bid = get_cookie('bid');
+    if (location.protocol != "file:" && (
+            typeof(bid) != "string" && _login ||
+            typeof(bid) == "string" && bid.substring(0,8) != _sig)) {
+        location.href += (/\?/.test(location.href)?"&":"?") + (
+                "_r=" + Math.random().toString(16).substring(2));
+    }};
+if (typeof(Do) != 'undefined') Do(_check_hijack);
+else if (typeof(get_cookie) != 'undefined') _check_hijack();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="dui-dialog0" class="dui-dialog " style="visibility: hidden; top: 210px; left: 459px; position: fixed;">                <span class="dui-dialog-shd" style="width: 94px; height: 70px;"></span>                <div class="dui-dialog-content">                    <a href="http://site.douban.com/146782/#" class="j_close_dialog dui-dialog-close">X</a>                    <div class="hd"><h3>提示</h3></div>                    <div class="bd" style="height: auto; overflow: visible;"></div>                </div>            </div></body></html>

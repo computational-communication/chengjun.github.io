@@ -3,9 +3,11 @@ layout: post
 title: "My Sina weibo"
 date: 2014-03-30 17:41
 comments: true
+authors: chengjun
 categories: 
-- weibo
-- 记录
+- programming
+- communication-network
+- text-mining
 tags:
 - weibo
 ---
