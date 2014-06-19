@@ -17,14 +17,14 @@
     <script type="text/javascript">
           Do.add('common', {path: 'http://computational-communication.github.io/index_files/common.js', type: 'js'});
         Do.add('common-eventhandler', {path: 'http://computational-communication.github.io/index_files/common_eventhandler.js', type: 'js', requires: ['common']});
-        Do.add('setting-eventhandler', {path: 'computational-communication.github.io/index_files/setting_eventhandler.js', type: 'js', requires: ['common']});
-        Do.add('dialog-css', {path: 'computational-communication.github.io/index_files/dialog.css', type: 'css'});
+        Do.add('setting-eventhandler', {path: 'http://computational-communication.github.io/index_files/setting_eventhandler.js', type: 'js', requires: ['common']});
+        Do.add('dialog-css', {path: 'http://computational-communication.github.io/index_files/dialog.css', type: 'css'});
         Do.add('dialog', {path: 'http://computational-communication.github.io/index_files/dialog.js', type: 'js', requires: ['dialog-css']});
         Do.add('swf', {path: 'http://computational-communication.github.io/index_files/swfobject.js', type: 'js'});
         Do.add('video', {path: 'http://computational-communication.github.io/index_files/video.js', type: 'js'});
         Do.add('artist', {path: 'http://computational-communication.github.io/index_files/artist.js', type: 'js', requires: ['swf']});
         Do.add('slider', {path: 'http://computational-communication.github.io/index_files/slider.js', type: 'js'});
-        Do.add('effects', {path: 'computational-communication.github.io/index_files/jquery-ui-effects-core.min.js', type: 'js'});
+        Do.add('effects', {path: 'http://computational-communication.github.io/index_files/jquery-ui-effects-core.min.js', type: 'js'});
         Do.add('room-setting', {path: 'http://computational-communication.github.io/index_files/room-setting.js', type: 'js'});
         Do.global('common', 'common-eventhandler');
         var STATIC_FILE_VER = '53025';
@@ -45,29 +45,19 @@ var roomHoverColor = '';
   
   <link href="./index_files/core(1).css" rel="stylesheet" type="text/css">
 
-<style id="custom-theme">
-
-
-
-
-
-</style>
+<style id="custom-theme"></style>
 
     
 
 <meta content="Computational Communication(CC). 计算传播学，寻找人类传播行为的基因。" name="description">
 
     <style type="text/css">
-      
-
-
     </style>
     <script>
       
     </script>
     <link rel="stylesheet" href="http://computational-communication.github.io/index_files/69f19d98d6ad236a.css">
 <style type="text/css" id="css-share-button">      .bn-sharing {padding-right:10px;background-image: url(http://t.douban.com/pics/a1.png) !important; background-repeat: no-repeat !important; background-position: 100% -19px !important;*display:inline-block;}      a.bn-sharing:hover {text-decoration:underline;}      .bn-sharing-on {background-position:100% 4px !important;position:relative !important;z-index:1 !important;}      #db-div-sharing {position:absolute;width:100px;*margin-top:-2px;}      #db-div-sharing .bd {border:1px solid #aaa;background:#fff;padding:10px 0 0 10px;}      #db-div-sharing .bd li {line-height:17px;margin-bottom:10px;}      #db-div-sharing .hd {position:absolute;height:24px;*line-height:21px;overflow:hidden;right:0;top:-24px;padding:0 5px;border:1px solid #aaa;border-bottom:none;background:#fff;}      .rec-sin,      .rec-qzone,      .rec-tx,      .rec-wx,      .rec-qqim {padding-left:20px;background:url(http://img3.douban.com/f/shire/3c8da10d6081bd1b2d13d3733b2ac201535c5d0f/pics/ic_shares2.png) no-repeat 0 0;}      .rec-qzone {background-position:0 -32px;}      .rec-qqim {background-position:0 -64px;}      .rec-tx {background-position:0 -96px;}      .rec-wx {background-position:0 -128px;}   </style><script src="./index_files/ga.js" async="true"></script></head>
-<!--<body id="146782" data-site-url-for-json="http://site.douban.com/j/site/146782/" data-site-url="http://site.douban.com/146782/">-->
     
 
     <div class="wrapper">
@@ -75,21 +65,6 @@ var roomHoverColor = '';
             <div class="top-nav">
                 <a href="http://computational-communication.github.io/" class="logo">豆瓣</a>
                 
-
-
-
-
-
-
-<!--
-<div class="top-nav-info">
-		<span class="perf-metric"></span>
-        
-        <a href="http://www.douban.com/doumail/">豆邮</a>
-      <a target="_blank" href="http://www.douban.com/accounts/">黠之大者的帐号</a>
-      <a href="http://www.douban.com/accounts/logout?ck=_GnL">退出</a>
-</div> -->
-
 
             </div>
             
@@ -160,12 +135,6 @@ var roomHoverColor = '';
     Do('slider', 'room-setting');
     Do(function(){$(function(){$('.mod:has(.edit)').live('mouseenter', function(e){ $(e.currentTarget).addClass('mod-stat-active'); }).live('mouseleave', function(e){ $(e.currentTarget).removeClass('mod-stat-active');});});});
 </script>
-
-
-            </div>
-            
-
-
 
 
 <div class="sp-fn-box">
